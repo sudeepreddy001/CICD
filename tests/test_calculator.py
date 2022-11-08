@@ -66,7 +66,7 @@ class CalculatorTest(TestCase):
         """
     def test_perform_operation1(self):
         Calculator.addition = MagicMock(return_value=6)
-        self.assertEqual(Calculator.perform_operation('+', 3, 3),5)
+        self.assertEqual(Calculator.perform_operation('+', 3, 3),6)
     
     def test_perform_operation2(self):
         Calculator.subtraction = MagicMock(return_value=6)
